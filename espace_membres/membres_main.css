@@ -1,0 +1,85 @@
+.container{
+    position: relative;
+    padding: 0 15px;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+}/*
+.site{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}*/
+.sidebar{
+    font-size: 20px;
+}
+.sidebar{
+    display: flex;
+    margin-bottom: 18px;
+  }
+.sidebar a{
+    width: 50%;
+    display: block;
+    text-decoration: none;
+    padding: 0.6em 0;
+    transition: .3s;
+    border:solid 1px transparent;
+    padding-left: 10px;
+}
+.sidebar a:hover{
+    text-decoration: underline;
+}
+.sidebar a:hover,
+.sidebar a.active{
+    color: #000;
+    border: solid 1px #DBDBDB;
+    border-radius: 3px;
+    background: #FFF;
+    font-weight: bold;
+}
+.sidebar a:hover::before,
+.sidebar a.active::before{
+    opacity: 1;
+
+}
+/*css for formular*/
+.card-form{
+    text-align: center;
+
+}
+.card .card-pseudo,
+      .card-mail,
+      .card-mdp,
+      .card-mdp2,
+      .card-btn
+      .niveau,
+      .matricule
+      {
+        margin:10px;
+        font-size: 16px;
+      }
+      .card label{
+        text-align: left;
+         font-family: 700;
+      }
+      .card input[type="text"],
+            input[type="mail"],
+            input[type="password"]{
+                margin: 30px;
+                padding: 15px;
+                width: 400px;
+                border-radius:5px;
+                border:solid 1px rgba(00,55,100,0);
+            }
+            .card input[type="submit"]{
+                margin-top: 10px;
+                padding: 5px;
+                width: 150px;
+                font-size: 18px;
+                font-family: 900;
+                
+            }
+            .card input[type="submit"]:hover{
+                border: solid 1px #DBDBDB;
+                background-color: #FBFBFB;
+                cursor: pointer;
+            }

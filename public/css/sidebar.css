@@ -1,0 +1,48 @@
+.sidebar{
+    font-size: 20px;
+}
+.sidebar{
+    display: flex;
+    margin-bottom: 18px;
+  }
+.sidebar a{
+    width: 50%;
+    display: block;
+    text-decoration: none;
+    padding: 0.6em 0;
+    transition: .3s;
+    border:solid 1px transparent;
+    padding-left: 10px;
+}
+.sidebar a:hover{
+    text-decoration: underline;
+}
+.sidebar a:hover,
+.sidebar a.active{
+    color: #000;
+    border: solid 1px #DBDBDB;
+    border-radius: 3px;
+    background: #FFF;
+    font-weight: bold;
+}
+.sidebar a:hover::before,
+.sidebar a.active::before{
+    opacity: 1;
+
+}
+/*design pour les icones *
+*/
+.sidebar a::hover{
+    content:'';
+    display:inline-block;
+    width:15px;
+    height:15px;
+    vertical-align:middle;
+    margin-top:-2px;
+    margin-right:2px;
+    opacity:0.67;
+    background:url(images/home-page.svg) center center / contain;
+}
+.sidebar .sidebar-setting::hover{
+    background-image:url(images/group.svg)
+}
